@@ -54,6 +54,7 @@ header nav ul li a:hover {
 #home img {
     width: 400px; /* ajuste para o valor desejado */
     height: auto; /* isso mantém a proporção da imagem */
+    border-radius: 8px;
 }
 
 #home h1 {
@@ -91,6 +92,7 @@ header nav ul li a:hover {
 .item-menu-imagem {
     max-width: 200px; /* Ajuste conforme necessário */
     margin-bottom: 20px; /* Espaço entre a imagem e o título do hambúrguer */
+    border-radius: 8px;
 }
 
 .item-menu-descricao {
@@ -136,6 +138,7 @@ header nav ul li a:hover {
     max-width: 800px; /* Largura máxima */
     background-color: #f0ad4e; /* Fundo branco para o texto */
     margin-bottom: 3rem;
+    border-radius: 8px;
 }
 
 #about p {
