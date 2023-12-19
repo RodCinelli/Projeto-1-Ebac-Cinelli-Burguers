@@ -1,0 +1,288 @@
+/* Reset básico para remover estilos padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilização do cabeçalho */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #f0ad4e;
+}
+
+/* Estilização da seção principal (Hero) */
+#home {
+    background-color: #B22222;
+    padding: 2rem;
+    text-align: center;
+}
+
+.destaque {
+    font-weight: bold;
+    color: black;
+}
+
+#home img {
+    width: 400px; /* ajuste para o valor desejado */
+    height: auto; /* isso mantém a proporção da imagem */
+}
+
+#home h1 {
+    color: #f0ad4e;
+    font-weight: bold;
+}
+
+/* Estilização do menu */
+#menu {
+    padding: 2rem;
+    background-color: #f0ad4e;
+}
+
+#menu h2 {
+    color: #B22222;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem; /* Espaço entre o título do menu e as categorias */
+}
+
+.categoria-menu h3 {
+    color: black;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Estilização padrão dos itens de menu, aplicada a ambos, Clássicos e Especiais */
+.item-menu {
+    display: flex;
+    flex-direction: column; /* Itens dispostos em coluna */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    text-align: center;
+}
+
+.item-menu-imagem {
+    max-width: 200px; /* Ajuste conforme necessário */
+    margin-bottom: 20px; /* Espaço entre a imagem e o título do hambúrguer */
+}
+
+.item-menu-descricao {
+    flex-grow: 1;
+    color: black;
+}
+
+/* Estilização do contêiner das categorias para Grid */
+.categorias-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas de tamanho igual */
+    gap: 1rem; /* Espaçamento entre as categorias */
+    margin-top: 1rem; /* Espaço entre o título do menu e as categorias */
+}
+
+/* Estilização específica para o título e descrição dos itens de menu dentro de #classicos e #especiais */
+#classicos .item-menu h4, #especiais .item-menu h4 {
+    margin: 0px; /* Remove margem padrão do título */
+}
+
+#classicos .item-menu p, #especiais .item-menu p {
+    margin: 5px 0px 20px; /* Margem apenas na base do parágrafo */
+}
+
+/* Estilização da seção Sobre */
+#about {
+    background-color: #b30000; /* Um tom claro baseado na paleta de cores */
+    padding: 2rem 2rem; /* Espaçamento interno */
+    text-align: center; /* Centralização do texto */
+}
+
+#about h2 {
+    color: black; /* Cor vermelha para o título */
+    margin-bottom: 2rem; /* Espaço abaixo do título */
+    font-weight: bold;
+}
+
+.about-content {
+    border: 1px solid black; /* Bordas com a cor vermelha */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombreamento para a borda */
+    padding: 2rem; /* Espaçamento interno */
+    margin: auto; /* Centraliza o conteúdo */
+    max-width: 800px; /* Largura máxima */
+    background-color: #f0ad4e; /* Fundo branco para o texto */
+    margin-bottom: 3rem;
+}
+
+#about p {
+    font-size: 1.1rem; /* Tamanho da fonte */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    color: black; /* Cor do texto */
+    margin-bottom: 2rem; /* Espaço entre parágrafos */
+}
+
+/* Estilização da seção de Contato */
+#contact {
+    background-color: #f0ad4e; /* Fundo branco para a seção de contato */
+    color: black; /* Cor de texto padrão para contraste */
+    padding: 3rem 0; /* Espaçamento superior e inferior */
+}
+
+#contact .container {
+    max-width: 1200px; /* Largura máxima do contêiner */
+    margin: auto; /* Centraliza o contêiner */
+    padding: 0 2rem; /* Espaçamento lateral */
+}
+
+#contact h2 {
+    color: #b30000; /* Título em vermelho para destaque */
+    text-align: center; /* Título centralizado */
+    margin-bottom: 3rem; /* Espaço abaixo do título */
+}
+
+.contact-methods {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Três colunas para as diferentes formas de contato */
+    gap: 2rem; /* Espaço entre as colunas */
+    text-align: center; /* Texto centralizado dentro de cada método de contato */
+    margin-top: 60px;
+}
+
+.contact-methods h3 {
+    color: black; /* Subtítulos em laranja para destaque */
+    margin-bottom: 3rem; /* Espaço abaixo dos subtítulos */
+    font-size: 1.1rem;
+}
+
+.contact-methods form,
+.contact-methods .social-links,
+.contact-methods p {
+    background-color: black; /* Fundo mais claro para diferenciação */
+    padding: 2rem; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombreamento leve */
+    color: #f0ad4e;
+}
+
+.contact-methods input,
+.contact-methods textarea {
+    width: 100%; /* Largura total dentro do contêiner */
+    padding: 0.75rem; /* Espaçamento interno dos campos */
+    margin-bottom: 1rem; /* Espaço entre os campos */
+    border: 2px solid #f0ad4e; /* Borda inicial */
+    border-radius: 4px; /* Bordas arredondadas para os campos */
+    outline: none; /* Remove o contorno padrão ao focar */
+    transition: border-color 0.3s; /* Transição suave da cor da borda */
+}
+
+.contact-methods input:focus,
+.contact-methods textarea:focus {
+    border-color: #b30000; /* Muda a cor da borda para vermelho ao focar */
+}
+
+
+.contact-methods button {
+    padding: 0.75rem 1.5rem; /* Espaçamento interno do botão */
+    color: #fff; /* Cor de texto do botão */
+    background-color: #b30000; /* Fundo do botão em vermelho */
+    border: none; /* Sem borda */
+    border-radius: 4px; /* Bordas arredondadas do botão */
+    cursor: pointer; /* Cursor de clique */
+    transition: background-color 0.3s; /* Transição suave para o hover */
+    margin-top: 8px;
+}
+
+.contact-methods button:hover {
+    background-color: #a30000; /* Escurece o botão no hover */
+}
+
+.social-links {
+    list-style: none; /* Remove estilos de lista */
+    padding: 0; /* Remove o padding padrão */
+}
+
+.social-links li {
+    display: inline-block; /* Exibe os ícones em linha */
+    margin-right: 5rem; /* Espaço entre os ícones */
+}
+
+.social-links li:last-child {
+    margin-right: 0; /* Remove margem do último item */
+}
+
+.social-links img {
+    width: 71px; /* Tamanho dos ícones */
+    height: auto; /* Mantém a proporção dos ícones */
+}
+
+/* Estilização do rodapé */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Responsividade: ajustes para telas médias (tablets) */
+@media (max-width: 768px) {
+    .categorias-menu,
+    .contact-methods {
+        grid-template-columns: 1fr; /* Muda para uma coluna */
+    }
+
+    #home img {
+        width: 95%; /* Ajusta a largura da imagem na seção principal */
+    }
+
+    .social-links li {
+        display: block; /* Exibe os ícones um abaixo do outro */
+        margin: 10px auto; /* Centraliza e adiciona espaço entre os ícones */
+    }
+
+    /* Outros ajustes de estilização conforme necessário */
+}
+
+/* Responsividade: ajustes para telas pequenas (smartphones) */
+@media (max-width: 480px) {
+    /* Remova ou comente a regra abaixo para manter o menu horizontal */
+    /* header nav ul li {
+        display: block; // Exibe os itens do menu um abaixo do outro
+        margin: 10px auto; // Centraliza e adiciona espaço entre os itens
+    } */
+
+    .item-menu-imagem {
+        max-width: 100px; /* Reduz o tamanho da imagem dos itens do menu */
+    }
+
+    #contact .container,
+    .about-content {
+        padding: 0 1rem; /* Reduz o espaçamento lateral */
+    }
+
+    /* Outros ajustes de estilização conforme necessário */
+}
+

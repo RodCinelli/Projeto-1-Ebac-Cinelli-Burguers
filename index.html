@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinelli's Burgers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Bem-vindo à Cinelli's Burgers</h1> <br>
+        <p class="destaque">Descubra os melhores hambúrgueres artesanais da cidade!</p> <br>
+        <img src="images/imagemcapa.png" alt="Capa da Cinelli's Burgers">
+    </section>
+
+    <section id="menu">
+        <h2>Nosso Menu</h2> <br>
+        <div class="categorias-menu">
+            <div class="categoria-menu" id="classicos">
+                <h3>Clássicos</h3>
+                <div class="item-menu">
+                    <img src="images/cinelliburguer.png" alt="Cinelli Burger" class="item-menu-imagem">
+                    <div class="item-menu-descricao">
+                        <h4>Cinelli Burger</h4>
+                        <p>Pão artesanal, hambúrguer 180g, queijo cheddar, alface, tomate e molho especial. R$25,00</p>
+                    </div>
+                </div>
+                <div class="item-menu">
+                    <img src="images/cheddarmelt.png" alt="Cheddar Melt" class="item-menu-imagem">
+                    <div class="item-menu-descricao">
+                        <h4>Cheddar Melt</h4>
+                        <p>Pão brioche, hambúrguer de 180g, muito cheddar derretido e cebolas caramelizadas. R$27,00</p>
+                    </div>
+                </div>
+                <div class="item-menu">
+                    <img src="images/baconbliss.png" alt="Bacon Bliss" class="item-menu-imagem">
+                    <div class="item-menu-descricao">
+                        <h4>Bacon Bliss</h4>
+                        <p>Pão de batata, hambúrguer suculento, fatias generosas de bacon, queijo e molho barbecue.
+                            R$30,00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="categoria-menu" id="especiais">
+                <h3>Especiais</h3>
+                <div class="item-menu">
+                    <img src="images/bluecheeseburguer.png" alt="Blue Cheese Burger" class="item-menu-imagem">
+                    <div class="item-menu-descricao">
+                        <h4>Blue Cheese Burger</h4>
+                        <p>Pão australiano, hambúrguer de 180g, queijo gorgonzola, rúcula e molho de mostarda. R$32,00
+                        </p>
+                    </div>
+                    <div class="item-menu">
+                        <img src="images/spicymexican.png" alt="Spicy Mexican" class="item-menu-imagem">
+                        <div class="item-menu-descricao">
+                            <h4>Spicy Mexican</h4>
+                            <p>Pão com gergelim, hambúrguer picante, jalapeños, guacamole e sour cream. R$29,00</p>
+                        </div>
+                        <div class="item-menu">
+                            <img src="images/truffledeluxe.png" alt="Truffle Deluxe" class="item-menu-imagem">
+                            <div class="item-menu-descricao">
+                                <h4>Truffle Deluxe</h4>
+                                <p>Pão de fermentação natural, hambúrguer de 200g, queijo brie, cogumelos e molho de
+                                    trufas. R$35,00</p>
+                            </div>
+                        </div>
+                    </div>
+    </section>
+
+    <section id="about">
+        <h2>Sobre Nós</h2>
+        <div class="about-content"> <br>
+            <p>Na Cinelli's Burgers, cada hambúrguer é uma celebração da culinária artesanal.</p>
+            <p>Nosso blend de carne exclusivo é o segredo por trás do sabor inconfundível que você encontrará em cada
+                mordida.</p>
+            <p>Valorizamos a qualidade, selecionando apenas ingredientes premium para uma experiência gastronômica que
+                delicia e surpreende.</p>
+            <p>Venha desfrutar de nossas criações únicas em um ambiente acolhedor. Experimente a diferença na Cinelli's
+                Burgers, onde cada visita é uma memória para saborear.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contato</h2>
+            <div class="contact-methods">
+                <div>
+                    <h3>Fale conosco</h3>
+                    <form>
+                        <input type="text" placeholder="Seu nome" required />
+                        <input type="email" placeholder="Seu e-mail" required />
+                        <input type="tel" placeholder="Seu telefone (opcional)" />
+                        <textarea placeholder="Sua mensagem" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                <div>
+                    <h3>Nos acompanhe</h3>
+                    <ul class="social-links">
+                        <li>
+                            <a href="mailto:rodcinelli@gmail.com" title="Nos mande um E-mail">
+                                <img src="images/gmail.png" alt="Logo do Gmail" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/rod.cinelli/" title="Siga-nos no Instagram">
+                                <img src="images/instagram.png" alt="Logo do Instagram" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Venha até nós</h3>
+                    <p>
+                        Rua Magno Martins , 260 <br> Freguesia / Ilha do Governador <br> Rio de Janeiro , RJ
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Rodrigo Cinelli. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var inputs = document.querySelectorAll('input, textarea');
+
+            inputs.forEach(function (input) {
+                var defaultPlaceholder = input.placeholder;
+
+                input.onfocus = function () {
+                    input.placeholder = '';
+                };
+
+                input.onblur = function () {
+                    input.placeholder = defaultPlaceholder;
+                };
+            });
+        });   
+    </script>
+</body>
+</body>
+
+</html>
