@@ -228,9 +228,10 @@ header nav ul li a:hover {
     padding: 0; /* Remove o padding padrão */
 }
 
+/* Estilização dos ícones sociais */
 .social-links li {
-    display: inline-block; /* Exibe os ícones em linha */
-    margin-right: 5rem; /* Espaço entre os ícones */
+    display: inline-block; /* Mantém os ícones em linha */
+    margin-right: 5rem; /* Espaço entre os ícones - já definido para telas maiores */
 }
 
 .social-links li:last-child {
@@ -262,8 +263,12 @@ footer {
     }
 
     .social-links li {
-        display: block; /* Exibe os ícones um abaixo do outro */
-        margin: 10px auto; /* Centraliza e adiciona espaço entre os ícones */
+        display: inline-block; /* Exibe os ícones em linha */
+        margin-right: 1rem; /* Espaço entre os ícones */
+    }
+    
+    .social-links li:last-child {
+        margin-right: 0; /* Remove margem do último item */
     }
 
     /* Outros ajustes de estilização conforme necessário */
@@ -271,11 +276,13 @@ footer {
 
 /* Responsividade: ajustes para telas pequenas (smartphones) */
 @media (max-width: 480px) {
-    /* Remova ou comente a regra abaixo para manter o menu horizontal */
-    /* header nav ul li {
-        display: block; // Exibe os itens do menu um abaixo do outro
-        margin: 10px auto; // Centraliza e adiciona espaço entre os itens
-    } */
+    .social-links li {
+        margin-right: 90px; /* Aumenta o espaçamento entre os ícones */
+    }
+
+    .social-links li:last-child {
+        margin-right: 0; /* Mantém a margem do último item */
+    }
 
     .item-menu-imagem {
         max-width: 100px; /* Reduz o tamanho da imagem dos itens do menu */
